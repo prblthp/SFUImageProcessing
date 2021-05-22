@@ -1,7 +1,7 @@
 
 import cv2
 import os
-from segment_CT_abdomen1 import segment_extreme_points
+from segment_CT_abdomenFV import segment_extreme_points
 import numpy as np
 import matplotlib.pyplot as plt
 

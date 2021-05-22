@@ -1,12 +1,12 @@
 import csv
 import cv2
 import os
-from segment_CT_abdomen1 import segment_extreme_points
+from segment_CT_abdomenFV import segment_extreme_points
 from time import process_time
 
 import sys
 
-#start_time = process_time()
+start_time = process_time()
 
 
 with open('segment_abdomen_extremes.csv', 'w', newline='') as file:
@@ -31,9 +31,9 @@ with open('segment_abdomen_extremes.csv', 'w', newline='') as file:
         i+=1
 
 
-#end_time = process_time()
+end_time = process_time()
 
 print(".csv file is ready.")
-#print(end_time-start_time)
+print("Time taken: ",end_time-start_time)
 
 
